@@ -1,7 +1,7 @@
 import {FC, useState} from 'react'
 import { Link } from 'wouter'
 
-export const Navbar:FC = ({children}) => {
+export const Navbar:FC = () => {
 
     const [showMenu, setShowMenu] = useState<boolean>(false); 
     const classLinkMenu = 'text-white hover:bg-red-800 px-3 py-2 rounded-md text-md font-medium' ;
@@ -91,7 +91,7 @@ export const Navbar:FC = ({children}) => {
                     </div>
                 )}
         </nav>
-        {children}
+
     </div>
   )
 }
